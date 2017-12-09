@@ -25,7 +25,9 @@
                <img src={this.props.image} alt="Bloc Logo"/>
                <h2>Current Program: {this.props.label}</h2>
                <h3>Current Week: {this.state.number}</h3>
-               <p>Current Date: {this.props.date.toLocaleDateString()}</p>
+               <button onClick={this.increment.bind(this)}>Increment</button>
+               <button onClick={this.decrement.bind(this)}>Decrement</button>
+               <p>Current date: {this.props.date.toLocaleDateString()}</p>
              </div>
            );
          }
